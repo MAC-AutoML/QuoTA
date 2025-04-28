@@ -5,7 +5,7 @@ from torchvision import io
 from typing import Dict
 from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 
-max pixels = 1280*28*28
+max_pixels = 1280*28*28
 
 # Load the model in half-precision on the available device(s)
 model = Qwen2VLForConditionalGeneration.from_pretrained(
